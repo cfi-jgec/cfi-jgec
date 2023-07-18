@@ -17,7 +17,7 @@ export default function Team() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
-          textShadow: "2px 2px maroon",
+          del: "2px 2px white",
           width: "fit-content",
           color: colors.white,
           borderRadius: "10px",
@@ -57,7 +57,7 @@ export default function Team() {
           sx={{
             fontSize: "2vw",
             fontWeight: "bold",
-            textShadow: "2px 2px maroon",
+            del: "2px 2px white",
             borderRadius: "10px",
             padding: "0 5%",
             textAlign: "left",

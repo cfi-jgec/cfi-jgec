@@ -24,7 +24,7 @@ const CardSection = (props) => {
             fontWeight: "bold",
             width: "fit-content",
             color: colors.white,
-            textShadow: `1px 1px ${colors.grey}`,
+            del: `1px 1px ${colors.grey}`,
             borderRadius: "10px",
             padding: "0 5%",
             ":first-letter": {

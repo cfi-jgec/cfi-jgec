@@ -59,7 +59,7 @@ export default function Events() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
-          textShadow: "2px 2px maroon",
+          del: "2px 2px white",
           width: "fit-content",
           color: colors.white,
           borderRadius: "10px",

@@ -1,21 +1,21 @@
 import "../styles/globals.css";
 import Appbar from "../components/Nav";
-import AOS from "aos";
+// import AOS from "aos";
 import Loader from "../components/Loader";
 import { Box } from "@mui/material";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import { AnimatePresence } from "framer-motion";
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-    });
+    // AOS.init({
+    //   duration: 1000,
+    //   easing: "ease-out-cubic",
+    //   once: true,
+    //   offset: 50,
+    // });
 
     setTimeout(() => setLoading(false), 2000);
   }, []);

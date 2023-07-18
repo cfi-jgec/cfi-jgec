@@ -47,13 +47,13 @@ export default function About() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
-          textShadow: "2px 2px maroon",
+          del: "2px 2px white",
           width: "fit-content",
           color: colors.white,
           borderRadius: "10px",
           padding: "0 5%",
           ":first-letter": {
-            color: colors.warning,
+            color: colors.success,
             fontSize: { xs: "40px", md: "4vw", fontWeight: "bold" },
           },
           "&::after": {
@@ -62,7 +62,7 @@ export default function About() {
             width: "50%",
             marginTop: -1,
             marginBottom: 4,
-            borderTop: `5px solid ${colors.warning}`,
+            borderTop: `5px solid ${colors.success}`,
           },
         }}
         className="animate__animated animate__fadeInLeft"
@@ -73,8 +73,8 @@ export default function About() {
         sx={{
           width: "100%",
           minHeight: "80vh",
-          backgroundColor: "#fff",
-          backgroundImage: `url("/assets/backgrounds/blob-scatter-haikei.svg")`,
+          // backgroundColor: "#fdfdfd",
+          backgroundImage: `url(/assets/backgrounds/corporate.jpg)`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
@@ -91,9 +91,12 @@ export default function About() {
                 Our Mission
               </Typography>
               <Typography variant="body1" component={"p"}>
-                To help current and aspiring entrepreneurs improve their
-                potential and advance society by sharing knowledge and
-                developing an entrepreneurial and innovative mindset.
+                The mission is to empower students to apply their theoretical
+                knowledge to real-world scenarios by providing a dynamic
+                platform for innovation and problem-solving. We believe that
+                theoretical knowledge can only be valuable when it is
+                practically applied, and our goal is to enable students to do
+                just that.
               </Typography>
             </GlassCard>
             <GlassCard>
@@ -102,15 +105,11 @@ export default function About() {
               </Typography>
 
               <Typography variant="body1" component={"p"}>
-                The vision of EDC JGEC is, &ldquo;To be a well recognized centre
-                of excellence for entrepreneurship development based on quality
-                learning and skill development.&rdquo; In view of the vision,
-                the mission statement is, &ldquo;To foster entrepreneurial
-                thinking, promote, facilitate the business knowledge and develop
-                the aspiring successful entrepreneurs imbibed with leadership
-                qualities using innovative and ethical business practices to
-                make global impact&rdquo;. We also aim at developing
-                interpersonality skills of our beloved student community.
+                We aim to cultivate a community of critical thinkers who are
+                equipped with the skills and confidence to tackle real-world
+                challenges. We believe that the ability to think critically is
+                essential for success in today's fast-paced world, and we want
+                to help our students develop this ability.
               </Typography>
             </GlassCard>
           </Row>
@@ -127,7 +126,7 @@ export default function About() {
                       sx={{
                         position: "relative",
                         top: "25%",
-                        backgroundColor: colors.warning,
+                        backgroundColor: colors.success,
                         borderRadius: "50%",
                         left: "-20px",
                       }}
@@ -135,7 +134,7 @@ export default function About() {
                     <Typography
                       variant="h6"
                       component={"h6"}
-                      color={colors.grey}
+                      color={colors.white}
                     >
                       {objective}
                     </Typography>
@@ -156,7 +155,7 @@ export default function About() {
                       variant="h6"
                       align="right"
                       component={"h6"}
-                      color={colors.warning}
+                      color={colors.success}
                     >
                       {val.title}
                       <br />
@@ -170,7 +169,7 @@ export default function About() {
                       sx={{
                         position: "relative",
                         top: "25%",
-                        backgroundColor: colors.warning,
+                        backgroundColor: colors.success,
                         borderRadius: "50%",
                         right: "-20px",
                       }}
@@ -214,7 +213,7 @@ const GlassCard = styled.div`
   justify-content: center;
   align-items: center;
   h4 {
-    color: ${colors.danger};
+    color: ${colors.info};
     font-weight: bold;
     text-align: left;
     width: 100%;
@@ -222,8 +221,7 @@ const GlassCard = styled.div`
   p {
     text-align: justify;
     width: 100%;
-    color: ${colors.grey};
-    font-family: "Baloo 2", cursive;
+    color: ${colors.white};
   }
   @media (max-width: 1000px) {
     width: 80%;
@@ -235,7 +233,7 @@ const GlassRowCard = styled(GlassCard)`
 `;
 const StepCard = styled.div`
   width: 90%;
-  border-left: 5px solid ${colors.danger};
+  border-left: 5px solid ${colors.info};
   min-height: 70px;
   display: flex;
   flex-direction: row;
@@ -252,7 +250,7 @@ const StepCard = styled.div`
 `;
 const StepCard2 = styled.div`
   width: 90%;
-  border-right: 5px solid ${colors.danger};
+  border-right: 5px solid ${colors.info};
   min-height: 100px;
   display: flex;
   flex-direction: row;
@@ -268,7 +266,7 @@ const StepCard2 = styled.div`
     line-height: normal;
     width: 100%;
     text-align: right;
-    color: ${colors.grey};
+    color: ${colors.white};
   }
   :last-of-type {
     border-right: 5px solid transparent;
