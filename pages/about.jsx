@@ -108,7 +108,7 @@ export default function About() {
                 We aim to cultivate a community of critical thinkers who are
                 equipped with the skills and confidence to tackle real-world
                 challenges. We believe that the ability to think critically is
-                essential for success in today's fast-paced world, and we want
+                essential for success in today&apos;s fast-paced world, and we want
                 to help our students develop this ability.
               </Typography>
             </GlassCard>
