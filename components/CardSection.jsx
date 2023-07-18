@@ -59,15 +59,6 @@ const CardSection = (props) => {
               <>
                 {props.Elem[elem].map((member, ind) => {
                   return (
-                    // <Card
-                    //   imageUrl={member.img}
-                    //   memberName={member.name}
-                    //   githubLink={member.githubLink}
-                    //   emailLink={member.mail}
-                    //   facebookLink={member.fb}
-                    //   key={ind}
-                    //   index={ind}
-                    // />
                     <HeroCard
                       img={member.img}
                       name={member.name}
