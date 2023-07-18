@@ -78,7 +78,7 @@ export default function About() {
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
-          justifyContent: "center",
+          justifyContent: "center", 
           alignItems: "center",
           display: "flex",
           flexDirection: "column",
