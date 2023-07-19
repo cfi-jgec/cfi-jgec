@@ -9,7 +9,7 @@ import ParticleImg from "../components/ParticleImage";
 export default function Home() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    document.title = "HOME | EDC";
+    document.title = "HOME | CFI";
     setLoading(true);
     setTimeout(() => {
       setLoading(false);

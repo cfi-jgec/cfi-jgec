@@ -39,7 +39,7 @@ const initiatives = [
 ];
 export default function About() {
   useEffect(() => {
-    document.title = "ABOUT | EDC";
+    document.title = "ABOUT | CFI";
   }, []);
   return (
     <Box>

@@ -19,7 +19,7 @@ function randomDim() {
 }
 export default function Gallery() {
   useEffect(() => {
-    document.title = "GALLERY | EDC";
+    document.title = "GALLERY | CFI";
     for (let i = 0; i < images.length; i++) {
       let dim = randomDim();
       images[i].width = dim.width;

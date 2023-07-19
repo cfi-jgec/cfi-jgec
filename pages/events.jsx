@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import { useEffect } from "react";
 export default function Events() {
   useEffect(() => {
-    document.title = "CONTACT | EDC";
+    document.title = "CONTACT | CFI";
   }, []);
   return (
     <Box>
@@ -67,7 +67,7 @@ export default function Events() {
                   &lsquo;x&rsquo; in TEDx stands for independently organized TED
                   events, which is a nonprofit organization devoted to spreading
                   ideas usually in the form of short, powerful talks. On 11th
-                  February 2019, EDC JGEC organized the first ever TEDx event,
+                  February 2019, CFI JGEC organized the first ever TEDx event,
                   for any state run engineering college in West Bengal. We
                   ignited a spark in our community by organizing a day filled
                   with brilliant speakers, thought-provoking ideas and mind
@@ -111,7 +111,7 @@ export default function Events() {
                   goals. A business plan lays out a written road map for the
                   firm from marketing, financial, and operational standpoints.
                   Both startups and established companies use business plans.
-                  EDC was fortunate enough to collaborate with young indians in
+                  CFI was fortunate enough to collaborate with young indians in
                   our technical fest &lsquo;Sristi&rsquo; giving the students an
                   oppurtunity of presenting their B-plans and getting valuable
                   inputs from the investors. The students showed their gracious

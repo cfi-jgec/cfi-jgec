@@ -9,7 +9,7 @@ import HeroCard from "../components/HeroCard";
 export default function Team() {
   // console.log(data);
   useEffect(() => {
-    document.title = "TEAM | EDC";
+    document.title = "TEAM | CFI";
   }, []);
   return (
     <Box>

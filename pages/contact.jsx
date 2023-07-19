@@ -51,7 +51,7 @@ const StyledTextField = styled(TextField)({
 export default function Events() {
   const [state, handleSubmit] = useForm("xzbwdzwy");
   useEffect(() => {
-    document.title = "CONTACT | EDC";
+    document.title = "CONTACT | CFI";
   }, []);
   return (
     <Box sx={{}}>
