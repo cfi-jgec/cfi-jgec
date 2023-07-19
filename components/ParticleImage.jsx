@@ -20,7 +20,6 @@ const particleOptions = {
 const motionForce = (x, y) => {
   return forces.disturbance(x, y, 5);
 };
-
 const ParticleImg = (props) => {
   return (
     <ParticleImage
