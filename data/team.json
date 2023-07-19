@@ -1,143 +1,128 @@
 [
   {
-    "Director": [
+    "key": "Secretary",
+    "val": [
       {
-        "name": "V Nikhita",
-        "img": "/assets/team/nikhita.jpeg",
-        "linkedin": "https://www.linkedin.com/in/nikhita28/",
-        "fb": "https://www.facebook.com/profile.php?id=100058608823618",
-        "ig": "https://www.instagram.com/its.nikhita/",
-        "mail": ""
+        "name": "Soumil Banik",
+        "post": "Secretary",
+        "email": "sb2406@me.jgec.ac.in",
+        "img": "https://i.imgur.com/sZZwC96.jpg",
+        "Phone no": 7457811436,
+        "linkedin": "https://www.linkedin.com/in/soumil-banik-a860781b8/"
+      },
+      {
+        "name": "Debjit Nandan",
+        "post": "Secretary",
+        "email": "dn2442@ece.jgec.ac.in",
+        "img": "https://i.imgur.com/w2bucKS.jpg",
+        "Phone no": 6289966003,
+        "linkedin": "https://www.linkedin.com/in/debjit-nandan-467411203/"
       }
     ]
   },
   {
-    "Finance Head": [
+    "key": "Treasurers",
+    "val": [
+      {
+        "name": "Uttaran Nath Sarkar",
+        "post": "Cashier",
+        "email": "un2441@ee.jgec.ac.in",
+        "img": "https://i.imgur.com/Ug25fSP.jpg",
+        "Phone no": 9382652358,
+        "linkedin": "https://www.linkedin.com/in/uttaran-nath-sarkar-148498203/"
+      },
+      {
+        "name": "Bhaskar Acharjee",
+        "post": "Cashier",
+        "email": "ba2462@ece.jgec.ac.in",
+        "img": "https://i.imgur.com/CkGVEeS.jpg",
+        "Phone no": 6290594650,
+        "linkedin": "https://www.linkedin.com/in/bhaskar-acharjee/"
+      }
+    ]
+  },
+  {
+    "key": "Tech Team",
+    "val": [
+      {
+        "name": "Tanmoy Dey",
+        "post": "Tech Head",
+        "email": "td2420@ece.jgec.ac.in",
+        "img": "https://i.imgur.com/HvC6RuZ.jpg",
+        "Phone no": 9679659586,
+        "linkedin": "https://www.linkedin.com/in/tanmoy-dey-12bbbb202/"
+      },
+      {
+        "name": "Suraj Uddin",
+        "post": "Tech Head",
+        "email": "su2434@me.jgec.ac.in",
+        "img": "https://i.imgur.com/M2L5JZA.jpg",
+        "Phone no": 8584967110,
+        "linkedin": "https://www.linkedin.com/in/suraj-uddin-631030203/"
+      },
+      {
+        "name": "ANURAG NAYAK",
+        "post": "Tech Head",
+        "email": "anurag14200314@gmail.com",
+        "img": "https://i.imgur.com/S2BySRt.jpg",
+        "Phone no": 8637067005,
+        "linkedin": "https://www.linkedin.com/in/amianurag/"
+      }
+    ]
+  },
+
+  {
+    "key": "Stock Head",
+    "val": [
+      {
+        "name": "Hemangojit Baidya",
+        "post": "Stock Head",
+        "email": "hb2452@me.jgec.ac.in",
+        "img": "https://i.imgur.com/YD8YJpo.jpg",
+        "Phone no": 7602417562,
+        "linkedin": "https://www.linkedin.com/in/hemangojit-baidya-664023203/"
+      }
+    ]
+  },
+
+  {
+    "key": "Web Master",
+    "val": [
       {
         "name": "Soham Chowdhury",
-        "img": "/assets/team/soham.jpeg",
-        "linkedin": "https://www.linkedin.com/in/code-soham/",
-        "fb": "https://www.facebook.com/soham.36.chowdhury",
-        "ig": "https://www.instagram.com/soham_hasnt_/",
-        "mail": ""
+        "post": "Web Master",
+        "email": "sc2412@it.jgec.ac.in",
+        "img": "https://i.imgur.com/6hUvFvt.jpg",
+        "Phone no": 6294750719,
+        "linkedin": "https://www.linkedin.com/in/code-soham/"
       }
     ]
   },
   {
-    "Assistant Directors":[
-        {"name": "Parmita Saha",
-        "img": "/assets/team/parmita.jpeg",
-        "linkedin": "https://www.linkedin.com/in/parmita-saha-149a7022a",
-        "fb": "",
-        "ig": "https://instagram.com/the_colouring_heart_code?igshid=NGExMmI2YTkyZg==",
-        "mail": ""},
-        {
-          "name": "Adrita Mandal",
-          "img": "/assets/team/adrita.jpg",
-          "linkedin": "https://www.linkedin.com/in/adrita-mandal-3477ab226/",
-          "fb": "https://www.facebook.com/profile.php?id=100076167983448",
-          "ig": "https://www.instagram.com/adrita1047/",
-          "mail": ""
-        }
-    ]
-  },
-  {
-    "Operations Heads": [
+    "key": "Content Team",
+    "val": [
       {
-        "name": "Protiti Saha",
-        "img": "/assets/team/protiti.jpg",
-        "linkedin": "https://www.linkedin.com/in/protiti-saha-b91028203/",
-        "fb": "",
-        "ig": "https://www.instagram.com/protiti_saha_02/",
-        "mail": ""
+        "name": "Tunnisha Das Gupta",
+        "post": "Content Head",
+        "email": "td2428@ce.jgec.ac.in",
+        "img": "https://i.imgur.com/anb3TJP.jpg",
+        "Phone no": 9828916270,
+        "linkedin": "https://www.linkedin.com/in/tunnisha-das-gupta-a43231204/"
       },
       {
-        "name": "Aditi Kumari",
-        "img": "/assets/team/aditi.jpeg",
-        "linkedin": "https://www.linkedin.com/in/aditi-kumari-45b957227/",
-        "fb": "",
-        "ig": "https://www.instagram.com/aditi__674/",
-        "mail": ""
-      }
-    ]
-  },
-  {
-    "Event Heads": [
-      {
-        "name": "Hia Biswas",
-        "img": "/assets/team/hia.jpeg",
-        "linkedin": "https://www.linkedin.com/in/hia-biswas-016647200/",
-        "fb": "https://www.facebook.com/tridha.biswas",
-        "ig": "https://www.instagram.com/_heymeh_hia/",
-        "mail": ""
+        "name": "Moumita Mondal",
+        "post": "Content",
+        "email": "mm2423@ce.jgec.ac.in",
+        "img": "https://i.imgur.com/SvAmZ41.jpg",
+        "linkedin": "https://www.linkedin.com/in/moumita-mondal-4312a6202/"
       },
       {
-        "name": "Shreya Dandapat",
-        "img": "/assets/team/shreya_dandapat_.jpeg",
-        "linkedin": "https://www.linkedin.com/in/shreya-dandapat-879213224",
-        "fb": "",
-        "ig": "https://instagram.com/__xhryad?igshid=NGExMmI2YTkyZg==",
-        "mail": ""
-      }
-    ]
-  },
-  {
-    "Content Head": [
-      {
-        "name": "Rohini Afsana",
-        "img": "/assets/team/rohini.jpeg",
-        "linkedin": "https://www.linkedin.com/in/rohini-afsana-7a0385250",
-        "fb": "",
-        "ig": "https://instagram.com/rohiniafsana?igshid=MzNlNGNkZWQ4Mg==",
-        "mail": ""
-      }
-    ]
-  },
-  {
-    "Graphics & Design Head": [
-      {
-        "name": "Souvik Banerjee",
-        "img": "/assets/team/souvik.jpeg",
-        "linkedin": "https://www.linkedin.com/in/souvik-banerjee-703b24211/",
-        "fb": "https://www.facebook.com/souvik.banerjee.1044186",
-        "ig": "",
-        "mail": ""
-      }
-    ]
-  },
-  {
-    "Financial Empowerment Head":[
-      {
-        "name": "Pritam Sardar",
-        "img": "/assets/team/pritam.jpg",
-        "fb": "https://www.facebook.com/pritam.sardar2001",
-        "linkedin": "https://www.linkedin.com/in/pritamsardar2001",
-        "ig": "https://instagram.com/_pritamsardar_",
-        "mail": ""
-      }
-    ]
-  },
-  {
-    "Sponsorship Head": [
-      {
-        "name": "Aditi Kumari",
-        "img": "/assets/team/aditi.jpeg",
-        "linkedin": "https://www.linkedin.com/in/aditi-kumari-45b957227/",
-        "fb": "",
-        "ig": "https://www.instagram.com/aditi__674/",
-        "mail": ""
-      }
-    ]
-  },
-  {
-    "Public Relations Head": [
-      {
-        "name": "Atri Sukul",
-        "img": "/assets/team/atri.jpg",
-        "linkedin": "https://www.linkedin.com/in/atri-sukul-35a9b022a/",
-        "fb": "",
-        "ig": "",
-        "mail": ""
+        "name": "Arka Biswas",
+        "post": "Content Head",
+        "email": "ab2451@ee.jgec.ac.in",
+        "img": "https://i.imgur.com/l2hlspo.jpg",
+        "Phone no": 8910138703,
+        "linkedin": "linkedin.com/in/arka-biswas-859428203/"
       }
     ]
   }

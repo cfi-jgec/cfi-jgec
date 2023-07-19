@@ -1,100 +1,113 @@
-import { Box, Hidden, IconButton, Typography } from "@mui/material";
+import { Fab } from "@mui/material";
 import { colors } from "../styles/colors";
 import styled from "styled-components";
-import { Facebook, Google, Instagram, LinkedIn } from "@mui/icons-material";
-const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  :hover .ico {
-    visibility: visible;
-    transition: all 0.5s ease-in-out;
-  }
-  margin-bottom: 40px;
-  h6 {
-    // :first-letter{
-    //   color: ${colors.warning};
-    // }
-  }
-`;
-const Actions = styled.div`
-  position: absolute;
-  top: 70%;
-  width: 80%;
-  margin: 0 10%;
-  display: flex;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 2s;
-  justify-content: space-evenly;
-  .ico {
-    visibility: hidden;
-    transition: all 0.5s ease-in-out;
-    color: ${colors.white};
-  }
-  .ico:hover {
-    color: ${colors.info};
-    transform: scale(1.3);
-  }
-`;
-const Img = styled.img`
-  width: 95%;
-  z-index: 3;
-  height: 95%;
-  margin: 2.5%;
-  border-radius: 12px;
-  transition: all 0.5s ease-in-out;
-`;
-function handleHref(uri) {
-  window.open(uri);
-}
+import { Email, LocalPhone, LinkedIn } from "@mui/icons-material";
 export default function HeroCard(props) {
   return (
-    <Card>
-      <Box
-        sx={{
-          width: "250px",
-          padding: 0,
-          height: "250px",
-          backdropFilter: `blur(10px)`,
-          backgroundColor: `rgba(10, 10, 10, 0.2)`,
-          borderRadius: `12px`,
-          zIndex: "0",
-          border: `1px solid rgba(255, 255, 255, 0.2)`,
-          transition: "all 0.5s ease-in-out",
-          ":hover": {
-            backgroundColor: `rgba(255, 255, 255, 0.1)`,
-            border: `4px solid ${colors.info}`,
-            Img: {
-              transform: `translateY(-70px)`,
-              borderRadius: `50%`,
-              border: `4px solid ${colors.darkGrey}`,
-              transition: "all 0.5s ease-in-out",
-            },
-            borderRadius: `50%`,
-          },
-        }}
-      >
-        <Actions>
-          <IconButton className="ico" onClick={() => handleHref(props.fb)}>
-            <Facebook />
-          </IconButton>
-          <IconButton className="ico" onClick={() => handleHref(props.lkdin)}>
-            <LinkedIn />
-          </IconButton>
-          <IconButton className="ico">
-            <Instagram onClick={() => handleHref(props.ig)} />
-          </IconButton>
-        </Actions>
-        <Img src={props.img} alt="avatar" />
-      </Box>
-      <Typography
-        className="heroName"
-        variant="h6"
-        component="h6"
-        align="center"
-        color={colors.warning}
-      >
-        {props.name}
-      </Typography>
-    </Card>
+    <Member data-aos="fade-in" data-aos-delay={200 + props.i * 100}>
+      <Card>
+        <HeroImage>
+          <Image
+            src={props.img || "https://i.imgur.com/VfzpNHY.png"}
+            alt="headshot"
+          />
+        </HeroImage>
+        <H>{props.name}</H>
+        <D>{props.post}</D>
+      </Card>
+      <Social>
+        <a href={"mailto:" + props.email}>
+          <Email />
+        </a>
+        <a href={"tel:" + props.ph}>
+          <LocalPhone />
+        </a>
+        <a href={props.linkedin} target="__blank" rel="noreferrer">
+          <LinkedIn />
+        </a>
+      </Social>
+    </Member>
   );
 }
+
+const Social = styled.div`
+  width: 0;
+  transition: 0.5s;
+  border-radius: 0px 2px 2px 0px;
+  background-color: ${colors.primary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  svg {
+    color: transparent;
+    height: 0px;
+    width: 0px;
+    transition: 0.5s;
+  }
+`;
+const Card = styled.div`
+  width: 220px;
+  height: 250px;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+const Member = styled.div`
+  height: 250px;
+  width: 220px;
+  margin: 20px;
+  display: flex;
+  background-color: #fdfdfdaa;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 2px;
+  &:hover {
+    ${Card} {
+      width: 170px;
+      transition: 0.5s;
+    }
+    ${Social} {
+      width: 50px;
+      height: 100%;
+      background-color: ${colors.primary};
+      svg {
+        color: #fdfdfd;
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+`;
+const HeroImage = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: ${colors.primary};
+  border-radius: 50%;
+`;
+const H = styled.h1`
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  color: ${colors.primary};
+`;
+const D = styled.p`
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1px;
+  color: #456789;
+  text-align: center;
+`;
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+`;

@@ -4,10 +4,10 @@ import styled from "styled-components";
 import "animate.css";
 import data from "../data/team.json";
 import { useEffect } from "react";
-import CardSection from "../components/CardSection";
 import Layout from "../components/Layout";
+import HeroCard from "../components/HeroCard";
 export default function Team() {
-  console.log(data);
+  // console.log(data);
   useEffect(() => {
     document.title = "TEAM | EDC";
   }, []);
@@ -43,8 +43,8 @@ export default function Team() {
         sx={{
           width: "100%",
           minHeight: "100vh",
-          backgroundColor: "#fff",
-          backgroundImage: `url("/assets/backgrounds/blob-scatter-haikei.svg")`,
+          backgroundColor: "#fdfdfd",
+          backgroundImage: `url("/assets/backgrounds/nasa_earth.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
@@ -53,28 +53,40 @@ export default function Team() {
           padding: "20px",
         }}
       >
-        {/* <Typography
-          sx={{
-            fontSize: "2vw",
-            fontWeight: "bold",
-            del: "2px 2px white",
-            borderRadius: "10px",
-            padding: "0 5%",
-            textAlign: "left",
-            ":first-letter": {
-              color: colors.warning,
-              fontSize: "3.2vw",
-            },
-          }}
-          className="animate__animated animate__fadeInLeft"
-        >
-          EDC Member 2k22
-        </Typography> */}
-
         <Layout>
-          {data.map((Elem, index) => {
-            return <CardSection Elem={Elem} key={index} />;
-          })}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              gap: "20px",
+              maxWidth: "1200px",
+              margin: "auto",
+            }}
+          >
+            {data.map((Elem, i) => {
+              console.log(Elem["val"]);
+              return (
+                <>
+                  {Elem["val"].map((val, index) => {
+                    return (
+                      <HeroCard
+                        key={index}
+                        i={index}
+                        name={val["name"]}
+                        img={val["img"]}
+                        post={val["post"]}
+                        linkedin={val["linkedin"]}
+                        email={val["email"]}
+                        ph={val["Phone no"]}
+                      />
+                    );
+                  })}
+                </>
+              );
+            })}
+          </Box>
         </Layout>
       </Box>
     </Box>

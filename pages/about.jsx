@@ -193,8 +193,17 @@ const Row = styled.div`
   width: 100%;
   height: 100%;
   padding: 0 5%;
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     flex-direction: column;
+    h4 {
+      font-size: 25px;
+    }
+    h6 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 13px;
+    }
   }
 `;
 
@@ -223,13 +232,18 @@ const GlassCard = styled.div`
     width: 100%;
     color: ${colors.white};
   }
-  @media (max-width: 1000px) {
-    width: 80%;
+  @media (max-width: 768px) {
+    width: 100%;
     min-height: 300px;
+    margin: 0;
+    scale  : 0.8;
   }
 `;
 const GlassRowCard = styled(GlassCard)`
   width: 88%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const StepCard = styled.div`
   width: 90%;

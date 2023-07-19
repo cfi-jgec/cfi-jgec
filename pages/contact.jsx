@@ -59,7 +59,6 @@ export default function Events() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
-          del: "2px 2px white",
           width: "fit-content",
           color: colors.white,
           borderRadius: "10px",
@@ -83,7 +82,7 @@ export default function Events() {
       </Typography>
       <Box
         sx={{
-          backgroundImage: `url("/assets/backgrounds/blob-scatter-haikei.svg")`,
+          backgroundImage: `url("/assets/backgrounds/stacked-steps-haikei.svg")`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
@@ -96,23 +95,26 @@ export default function Events() {
               justifyContent: "center",
               alignItems: "center",
               display: "flex",
-              flexDirection: { xs: "column-reverse", md: "row" },
-              p: 7,
+              flexDirection: { xs: "column-reverse", lg: "row" },
+              p: { xs: 2, md: 5 },
             }}
           >
             <Box
               sx={{
                 width: { xs: "100%", md: "40%" },
                 // height:"100%",
-                p: 5,
+                p: { xs: 2, md: 5 },
                 display: "flex",
                 flexDirection: "column",
-                // alignItems:"center"
                 // border:"2px solid blue",
-                justifyContent: "space-between",
+                justifyContent: "center",
+                alignItems:"center",
+                m : "10px",
               }}
             >
-              <div>
+              <div style={{
+                marginBottom : "20px"
+              }}>
                 <Typography
                   variant="h6"
                   sx={{
@@ -124,7 +126,11 @@ export default function Events() {
                 >
                   <LocationOn /> Address
                 </Typography>
-                <Typography variant="p" sx={{ marginLeft: "20px" }} color={colors.white}>
+                <Typography
+                  variant="p"
+                  // sx={{ marginLeft: "20px" }}
+                  color={colors.white}
+                >
                   Jalpaiguri Government Engineering College,
                   <br /> P.O. Denguajhar,
                   <br /> Dist. - Jalpaiguri, 735102,
@@ -132,85 +138,25 @@ export default function Events() {
                 </Typography>
               </div>
               <div>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontWeight: "bold",
-                    color: "#4267B2",
-                  }}
-                >
-                  <Link href={"https://www.facebook.com/jgecEDC"}>
-                    <a>
-                      <Facebook style={{ fill: "#4267B2" }} /> Connect with us
-                      on Facebook
-                    </a>
-                  </Link>
-                </Typography>
-              </div>
-              <div>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontWeight: "bold",
-                    color: "#E1306C",
-                  }}
-                >
-                  <Link
-                    href={"https://www.instagram.com/edc_jgec/"}
-                    target="_blank"
-                  >
-                    <a>
-                      <Instagram style={{ fill: "#E1306C" }} /> Connect with us
-                      on Instagram
-                    </a>
-                  </Link>
-                </Typography>
-              </div>
-              {/* <div>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontWeight: "bold",
-                    color: "#1DA1F2",
-                  }}
-                >
-                  <Link href={"https://twitter.com"}>
-                    <a>
-                      <Twitter style={{ fill: "#1DA1F2" }} /> Connect with us on
-                      Twitter
-                    </a>
-                  </Link>
-                </Typography>
-              </div> */}
-              <div>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontWeight: "bold",
-                    color: "#0A66C2",
-                  }}
-                >
-                  <Link href={"https://www.linkedin.com/company/edc-jgec/"}>
-                    <a>
-                      <LinkedIn style={{ fill: "#0A66C2" }} /> Connect with us
-                      on LinkedIn
-                    </a>
-                  </Link>
-                </Typography>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.1553253187813!2d88.69891387620368!3d26.547277576866936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e47ba31ab53699%3A0x7fc0a752ab7572c3!2sCentre%20For%20Innovation%2C%20JGEC!5e0!3m2!1sen!2sin!4v1689749559913!5m2!1sen!2sin"
+                  width="360"
+                  height="240"
+                  style={{ border: 0, maxWidth: "90%", margin: "auto" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </Box>
             <Box
               sx={{
                 width: { xs: "100%", md: "40%" },
-                p: 5,
+                p: { xs: 2, md: 5 },
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",  
+                alignItems: "center",
                 backdropFilter: "blur(10px) ",
                 WebkitBackdropFilter: "blur(10px) ",
                 backgroundColor: "rgba(0,0,0,0.2)",
@@ -279,10 +225,10 @@ export default function Events() {
                       variant="outlined"
                     />
                     <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
+                      prefix="Message"
+                      field="message"
+                      errors={state.errors}
+                    />
                     <Button
                       variant="contained"
                       color="inherit"

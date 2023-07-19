@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import Appbar from "../components/Nav";
-// import AOS from "aos";
 import Loader from "../components/Loader";
 import { Box } from "@mui/material";
+import AOS from "aos";
 // import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
