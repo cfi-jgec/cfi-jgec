@@ -6,35 +6,29 @@ import { useEffect } from "react";
 import "animate.css";
 import { CheckCircle, AdjustRounded } from "@mui/icons-material";
 const objectives = [
-  "To inculcate the entrepreneurial culture into their minds",
-  "To organize Entrepreneurship Motivation Programs",
-  "Competitions to unleash the entrepreneurial potential among students",
-  "To aid them in initiation of industries and Business",
-  "Collaborate with entrepreneurship promotion agencies and organizations ",
-  "Leverage good student projects ",
-  "Product Identification ",
-  "Provide escort service for obtaining loan and other approvals.",
+  "Contribute to society and industry using technology",
+  "Promote technical hobby hands-on activities in the institute",
+  "Launch a knowledge sharing platform on college, national, and international platforms",
+  "Encourage bringing out products, not just working models, from projects and club events",
+  "Cultivate a community of critical thinkers equipped to tackle real-world challenges",
+  "Develop students' critical thinking skills and confidence for success in today's fast-paced world",
 ];
 const initiatives = [
   {
-    title: "Personality development",
-    desc: "We mentor students and enhance skills such as public speaking, event management,  teamwork,  leadership etc which would help them in making their career.",
+    title: "Technical development",
+    desc: "We mentor students and enhance their technical skills by providing them with the necessary resources and guidance to work on projects and participate in competitions.",
   },
   {
-    title: "Group discussion",
-    desc: "Group discussions are often held in between the core team to filtrate the  ongoing issues and maintain the smooth flow of work and sync up meets are held to check on the progress of the events.",
+    title: "Social Responsibility",
+    desc: "We encourage students to use their technical skills to solve real-world problems and contribute to society.",
   },
   {
-    title: "Business terms",
-    desc: "We also keep updating students about new and upcoming business terms and strategies which help in gaining knowledge as well as help them in extending their horizon of knowledge in the world of business and entrepreneurship.",
+    title: "Knowledge Sharing",
+    desc: "The Centre for Innovation is open at all times for anyone with the hunger for knowledge.",
   },
   {
-    title: "Session for marketing and business",
-    desc: "Several classes are held for the students to aspire their young minds and bring out the exceptional entrepreneur in them which would help them in launching their product.",
-  },
-  {
-    title: "Know Yourself",
-    desc: "Guiding sessions are held to dig out the innovation from the students and giving them a platform to pitch their ideas in front of the investors",
+    title: "Industry Interaction",
+    desc: "Our rich alumni network and industry connections allow us to provide students with opportunities to interact with industry experts and gain valuable insights into the industry.",
   },
 ];
 export default function About() {
@@ -78,7 +72,7 @@ export default function About() {
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
-          justifyContent: "center", 
+          justifyContent: "center",
           alignItems: "center",
           display: "flex",
           flexDirection: "column",
@@ -91,12 +85,14 @@ export default function About() {
                 Our Mission
               </Typography>
               <Typography variant="body1" component={"p"}>
-                The mission is to empower students to apply their theoretical
-                knowledge to real-world scenarios by providing a dynamic
-                platform for innovation and problem-solving. We believe that
-                theoretical knowledge can only be valuable when it is
-                practically applied, and our goal is to enable students to do
-                just that.
+                Our mission is to create a transformative learning experience
+                for students, bridging the gap between theory and practice. By
+                providing a dynamic platform for innovation and problem-solving,
+                we empower students to apply their academic knowledge to
+                real-world scenarios, making a positive impact on society.
+                Nurturing their visionary projects from conception to reality,
+                we offer comprehensive support, including mentoring, team
+                formation, funding, and publicity.
               </Typography>
             </GlassCard>
             <GlassCard>
@@ -108,8 +104,12 @@ export default function About() {
                 We aim to cultivate a community of critical thinkers who are
                 equipped with the skills and confidence to tackle real-world
                 challenges. We believe that the ability to think critically is
-                essential for success in today&apos;s fast-paced world, and we want
-                to help our students develop this ability.
+                essential for success in today&apos;s fast-paced world. As a
+                community of driven individuals united by creativity and a
+                passion for making a difference, we cultivate critical thinking
+                skills and confidence, preparing our students to succeed in a
+                fast-paced world and become responsible and impactful leaders of
+                the future.
               </Typography>
             </GlassCard>
           </Row>
@@ -135,6 +135,12 @@ export default function About() {
                       variant="h6"
                       component={"h6"}
                       color={colors.white}
+                      //style first letter
+                      sx={{
+                        ":first-letter": {
+                          color: colors.success,
+                        },
+                      }}
                     >
                       {objective}
                     </Typography>
@@ -236,7 +242,7 @@ const GlassCard = styled.div`
     width: 100%;
     min-height: 300px;
     margin: 0;
-    scale  : 0.8;
+    scale: 0.8;
   }
 `;
 const GlassRowCard = styled(GlassCard)`

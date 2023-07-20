@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Layout>
       <Screen>
-        {/* <ImgContainer>
+        <ImgContainer>
           <Image
             src="/logo_light.png"
             alt="Logo"
@@ -28,14 +28,15 @@ export default function Home() {
             width={300}
             blurDataURL="/blur_data.jpg"
           />
-          <ParticleImg src="/logo_light.png" />
-        </ImgContainer> */}
-        <Head>CENTRE FOR INNOVATION</Head>
+          {/* <ParticleImg src="/logo_light.png" /> */}
+        </ImgContainer>
+        {/* <Head>CENTRE FOR INNOVATION</Head> */}
         <Story>
-          We are delighted to introduce you to a vibrant community of technology
+          {/* We are delighted to introduce you to a vibrant community of technology
           enthusiasts and problem solvers. The Centre for Innovation serves as a
           technical club, dedicated to fostering innovation, creativity, and
-          technical excellence among our students.
+          technical excellence among our students. */}
+          Innovation leads to evolution, so why not stand hand in hand with it!
         </Story>
       </Screen>
     </Layout>
@@ -52,7 +53,7 @@ const Screen = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     min-height: calc(93vh);
-    justify-content: space-evenly;
+    justify-content: center;
   }
 `;
 const Head = styled.div`
@@ -69,12 +70,12 @@ const ImgContainer = styled.div`
   max-width: 50%;
   height: 50%;
   @media (max-width: 768px) {
-    display: none;
     width: 80%;
+    margin: 0 auto;
   }
 `;
 const Story = styled.div`
-  max-width: 50%;
+  max-width: 30%;
   height: 50%;
   padding: 2rem;
   font-size: 1.5rem;
@@ -82,12 +83,14 @@ const Story = styled.div`
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   color: ${colors.white};
   @media (max-width: 768px) {
     width: 100%;
     min-width: 300px;
     height: 100%;
+    margin-top : 50px;
     font-size: 0.8rem;
   }
 `;
