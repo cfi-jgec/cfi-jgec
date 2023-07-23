@@ -71,7 +71,7 @@ export default function Gallery() {
           width: "100%",
           minHeight: "80vh",
           backgroundColor: "#fff",
-          backgroundImage: `url("/assets/backgrounds/blob-scatter-haikei.svg")`,
+          backgroundImage: `url("/assets/backgrounds/corporate.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",

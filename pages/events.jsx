@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import { useEffect } from "react";
 export default function Events() {
   useEffect(() => {
-    document.title = "CONTACT | CFI";
+    document.title = "EVENTS | CFI";
   }, []);
   return (
     <Box>
@@ -40,90 +40,13 @@ export default function Events() {
         sx={{
           width: "100%",
           minHeight: "100vh",
-          backgroundColor: colors.secondary,
-          backgroundImage: `url("/assets/backgrounds/blob-scatter-haikei.svg")`,
+          backgroundImage: `url("/assets/backgrounds/corporate.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
         }}
       >
         <Layout>
-          <Box
-            sx={{
-              justifyContent: "center",
-              alignItems: "center",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <Card>
-              <CardText>
-                <Typography variant="h4" component={"h4"} fontWeight="bold">
-                  TEDx JGEC
-                </Typography>
-                <Typography variant="p" component={"p"} fontWeight="bold">
-                  TEDx is an international community that celebrates locally
-                  driven ideas and elevates them to a global stage. The
-                  &lsquo;x&rsquo; in TEDx stands for independently organized TED
-                  events, which is a nonprofit organization devoted to spreading
-                  ideas usually in the form of short, powerful talks. On 11th
-                  February 2019, CFI JGEC organized the first ever TEDx event,
-                  for any state run engineering college in West Bengal. We
-                  ignited a spark in our community by organizing a day filled
-                  with brilliant speakers, thought-provoking ideas and mind
-                  blowing conversations. Not only did our audience seek new
-                  ideas, but our organizing team also benefitted greatly, as the
-                  planning and execution of such an event requires leadership,
-                  teamwork and coordination skills, that parallel those required
-                  in the business world.
-                </Typography>
-              </CardText>
-              <CardImg>
-                <img src="/assets/placeholders/tedx_ayan.jpg" alt="TEDx" />
-              </CardImg>
-            </Card>
-            <Card>
-              <CardText>
-                <Typography variant="h4" component={"h4"} fontWeight="bold">
-                  The Bizz Quiz
-                </Typography>
-                <Typography variant="p" component={"p"} fontWeight="bold">
-                  The Biz Quiz, is an event to test the business knowledge of
-                  participants. Stretching across different business-related
-                  topics, the quiz will be a test of not just knowledge but also
-                  the lateral thinking skills of the participants. The students
-                  have shown their outstanding enthusiasm in this event and made
-                  it a grand success
-                </Typography>
-              </CardText>
-              <CardImg>
-                <img src="/assets/placeholders/bquiz.jpg" alt="TEDx" />
-              </CardImg>
-            </Card>
-            <Card>
-              <CardText>
-                <Typography variant="h4" component={"h4"} fontWeight="bold">
-                  The B-Plan
-                </Typography>
-                <Typography variant="p" component={"p"} fontWeight="bold">
-                  A business plan is a document that defines in detail a
-                  company&apos;s objectives and how it plans to achieve its
-                  goals. A business plan lays out a written road map for the
-                  firm from marketing, financial, and operational standpoints.
-                  Both startups and established companies use business plans.
-                  CFI was fortunate enough to collaborate with young indians in
-                  our technical fest &lsquo;Sristi&rsquo; giving the students an
-                  oppurtunity of presenting their B-plans and getting valuable
-                  inputs from the investors. The students showed their gracious
-                  performance with soaring entrepreneurial thinkings and
-                  impressing the investors with their capabilities
-                </Typography>
-              </CardText>
-              <CardImg>
-                <img src="/assets/placeholders/bplan.jpg" alt="TEDx" />
-              </CardImg>
-            </Card>
-          </Box>
         </Layout>
       </Box>
     </Box>

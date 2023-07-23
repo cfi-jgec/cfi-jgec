@@ -29,6 +29,7 @@ import {
   Collections,
   ConnectWithoutContact,
   Diversity1,
+  Diversity2,
   Event,
   Home,
   Info,
@@ -59,6 +60,11 @@ const pages = [
     name: "Team",
     link: "/team",
     icon: <Diversity1 />,
+  },
+  {
+    name: "Our Alumni",
+    link: "/alumni",
+    icon: <Diversity2 />,
   },
   {
     name: "Contact Us",
@@ -231,6 +237,10 @@ const Appbar = (props) => {
                         fontWeight: "bold",
                         backgroundColor:
                           router.pathname === page.link ? colors.white : null,
+                        "&:hover": {
+                          backgroundColor:
+                            router.pathname === page.link ? colors.white : "",
+                        },
                       }}
                     >
                       {page.name}

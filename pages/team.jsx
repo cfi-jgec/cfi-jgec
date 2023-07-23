@@ -44,7 +44,7 @@ export default function Team() {
           width: "100%",
           minHeight: "100vh",
           backgroundColor: "#fdfdfd",
-          backgroundImage: `url("/assets/backgrounds/nasa_earth.jpg")`,
+          backgroundImage: `url("/assets/backgrounds/corporate.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",

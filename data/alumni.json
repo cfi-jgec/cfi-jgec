@@ -1,10 +1,20 @@
 [
   {
+    "name": "Somen Pandey",
+    "batch": 2022,
+    "position": "Secretary",
+    "email": "pandeysomen0@gmail.com",
+    "pic": "https://drive.google.com/file/d/1MrucrCUl0f9RLot53VxV84azT07bk403/preview",
+    "phone": 9775950263,
+    "linkedin": "https://www.linkedin.com/in/somen-pandey-8b1b34203",
+    "facebook": "https://www.facebook.com/somen.somen.1426"
+  },
+  {
     "name": "Sayani guha",
     "batch": 2022,
     "position": "Cashier",
     "email": "sg2238@ece.jgec.ac.in",
-    "pic": "https://drive.google.com/open?id=1Y9tcprdQ2PhGdrYoJYBrk4fAo2FaoACw",
+    "pic": "https://drive.google.com/file/d/1Y9tcprdQ2PhGdrYoJYBrk4fAo2FaoACw/preview",
     "phone": 8910968612,
     "linkedin": "https://www.linkedin.com/in/sayani-guha-224015196",
     "facebook": "https://www.facebook.com/sayani.guha.961"
@@ -14,27 +24,17 @@
     "batch": 2022,
     "position": "Cashier",
     "email": "akchoudhary98@gmail.com",
-    "pic": "https://drive.google.com/open?id=1o5gLKyb0u3ENyHKBiQONdnL3oJurDAGv",
+    "pic": "https://drive.google.com/file/d/1o5gLKyb0u3ENyHKBiQONdnL3oJurDAGv/preview",
     "phone": 8436757986,
     "linkedin": "https://www.linkedin.com/in/anshuman-choudhary-7b034418a",
     "facebook": "https://www.facebook.com/anshuman.akc"
-  },
-  {
-    "name": "Diptangshu Chattopadhyay",
-    "batch": 2021,
-    "position": "Communication Head",
-    "email": "dc2123@ece.jgec.ac.in",
-    "pic": "https://drive.google.com/open?id=1Jj21OFWPEirqddsGpSlw3BDffJOdlGfu",
-    "phone": "",
-    "linkedin": "https://www.linkedin.com/in/diptangshu-chattopadhyay-648473163",
-    "facebook": ""
   },
   {
     "name": "Shankha Shubhra Mukherjee",
     "batch": 2022,
     "position": "Project Head",
     "email": "shankha.mu@gmail.com",
-    "pic": "https://drive.google.com/open?id=1xvjhl7HYzcMeGY1Y9JFsNSdqEhbI2ea5",
+    "pic": "https://drive.google.com/file/d/1xvjhl7HYzcMeGY1Y9JFsNSdqEhbI2ea5/preview",
     "phone": 9007645981,
     "linkedin": "https://www.linkedin.com/in/shankha-shubhra-mukherjee-3aba88198",
     "facebook": "https://www.facebook.com/shankhashubhra.mu"
@@ -44,119 +44,29 @@
     "batch": 2022,
     "position": "Project Head",
     "email": "subhanub72@gmail.com",
-    "pic": "https://drive.google.com/open?id=13gCkB5wzPwWZLkXhDYGLnYkYpGzLzDnt",
+    "pic": "https://drive.google.com/file/d/13gCkB5wzPwWZLkXhDYGLnYkYpGzLzDnt/preview",
     "phone": 9051860072,
     "linkedin": "www.linkedin.com/in/subhanu-banerjee-020461201",
     "facebook": "https://www.facebook.com/subhanu.banerjee"
-  },
-  {
-    "name": "Sayan Dey",
-    "batch": 2017,
-    "position": "Project Head",
-    "email": "dey.sayan22heaven@gmail.com",
-    "pic": "https://drive.google.com/open?id=1m8i4PvbSFrocahIZXZ20Vx0cdjFZZvr3",
-    "phone": "",
-    "linkedin": "https://www.linkedin.com/in/sayan-dey-46aa5a128",
-    "facebook": ""
-  },
-  {
-    "name": "SUBHADEEP DATTA",
-    "batch": 2018,
-    "position": "Secretary",
-    "email": "sahebdatta1996@gmail.com",
-    "pic": "https://drive.google.com/open?id=1n828ybwTAFc0-exc6D3ZzmNCG9OhqhUV",
-    "phone": "09474034723",
-    "linkedin": "https://www.linkedin.com/in/dattasubhadeep",
-    "facebook": ""
-  },
-  {
-    "name": "Atul Kumar",
-    "batch": 2020,
-    "position": "Secretary",
-    "email": "atul070kumar@gmail.com",
-    "pic": "https://drive.google.com/open?id=15928XpQzC0yHtGGcTq2b8d4m86jtYV7O",
-    "phone": 7908153700,
-    "linkedin": "https://www.linkedin.com/in/atul-k-262405a6",
-    "facebook": "https://m.facebook.com/atu070kumar"
-  },
-  {
-    "name": "Sailesh Sah",
-    "batch": 2021,
-    "position": "Secretary",
-    "email": "sah.sailesh18@gmail.com",
-    "pic": "https://drive.google.com/open?id=1_ykop_L3torqpWsv7idaguLfSF_W_sbx",
-    "phone": "08918259031",
-    "linkedin": "https://www.linkedin.com/in/saileshsah859",
-    "facebook": ""
-  },
-  {
-    "name": "Somen Pandey",
-    "batch": 2022,
-    "position": "Secretary",
-    "email": "pandeysomen0@gmail.com",
-    "pic": "https://drive.google.com/open?id=1MrucrCUl0f9RLot53VxV84azT07bk403",
-    "phone": 9775950263,
-    "linkedin": "https://www.linkedin.com/in/somen-pandey-8b1b34203",
-    "facebook": "https://www.facebook.com/somen.somen.1426"
-  },
-  {
-    "name": "Aroondhuti Paul",
-    "batch": 2017,
-    "position": "Secretary",
-    "email": "aroondhutipaul@gmail.com",
-    "pic": "https://drive.google.com/open?id=1ekquFCv0VBf3WH6GBYFC_EMdzECDBzRP",
-    "phone": 9126147393,
-    "linkedin": "https://www.linkedin.com/in/aroondhutipaul",
-    "facebook": "https://www.facebook.com/aroondhuti.paul"
-  },
-  {
-    "name": "Nabarjun Saha",
-    "batch": 2021,
-    "position": "Stock Head",
-    "email": "nabarjunsaha98@gmail.com",
-    "pic": "https://drive.google.com/open?id=17JuhPzfP9KTrAqk-MxK4FehGqRw4bWwG",
-    "phone": 8777098242,
-    "linkedin": "linkedin.com/in/nabarjun",
-    "facebook": "https://m.facebook.com/nabarjun.saha"
   },
   {
     "name": "Akash Bala",
     "batch": 2022,
     "position": "Stock Head",
     "email": "akashbala910@gmail.com",
-    "pic": "https://drive.google.com/open?id=1By69viD2_dUqbcCxL1LfikufQTBD6LAF",
+    "pic": "https://drive.google.com/file/d/1By69viD2_dUqbcCxL1LfikufQTBD6LAF/preview",
     "phone": 9800319177,
     "linkedin": "https://www.linkedin.com/in/akash-bala-454a51198",
     "facebook": "https://www.facebook.com/akash.bala.92775"
-  },
-  {
-    "name": "Subham Shaw",
-    "batch": 2021,
-    "position": "Stock Holder",
-    "email": "subhamshaw39@gmail.com",
-    "pic": "https://drive.google.com/open?id=1VGdMhlDry6iyFoeF9FRwvj3QXNPRblu6",
-    "phone": "",
-    "linkedin": "https://www.linkedin.com/in/subham-shaw-202161170",
-    "facebook": ""
   },
   {
     "name": "Sruti Chatterjee",
     "batch": 2022,
     "position": "Stocks Head",
     "email": "srutichatterjee2024@gmail.com",
-    "pic": "https://drive.google.com/open?id=1pqmXhiRHOt6juseQR_-3TPZ92jVbltJY",
+    "pic": "https://drive.google.com/file/d/1pqmXhiRHOt6juseQR_-3TPZ92jVbltJY/preview",
     "phone": "08695213690",
     "linkedin": "https://www.linkedin.com/in/sruti-chatterjee-38373019a/",
-    "facebook": ""
-  },
-  {
-    "name": "Anupam Sharma",
-    "batch": 2017,
-    "position": "Technical head",
-    "email": "sharmaanupam1095@gmail.com",
-    "pic": "https://drive.google.com/open?id=1ejQI0Y8SAC2rPzNt7SB577VHbMzK4LRe",
-    "phone": 9051170355,
-    "linkedin": "https://www.linkedin.com/in/anupamsharma0110",
     "facebook": ""
   },
   {
@@ -164,7 +74,7 @@
     "batch": 2022,
     "position": "Technical Head",
     "email": "amitchatterjee231@gmail.com",
-    "pic": "https://drive.google.com/open?id=1hnZWyEl2ifaX30fR6heIB2294rydtMfg",
+    "pic": "https://drive.google.com/file/d/1hnZWyEl2ifaX30fR6heIB2294rydtMfg/preview",
     "phone": 7001940570,
     "linkedin": "https://www.linkedin.com/in/amit-chatterjee-388729171",
     "facebook": "https://www.facebook.com/amit.chatterjee.37853"
@@ -174,7 +84,7 @@
     "batch": 2022,
     "position": "Technical Head",
     "email": "ni2221@cse.jgec.ac.in",
-    "pic": "https://drive.google.com/open?id=10n1i92ZBr_K5UUEqyWadbiqxEjmZSj_M",
+    "pic": "https://drive.google.com/file/d/10n1i92ZBr_K5UUEqyWadbiqxEjmZSj_M/preview",
     "phone": 8961611796,
     "linkedin": "https://www.linkedin.com/in/nilufa-islam-1a2a3319a/",
     "facebook": "https://www.facebook.com/nilufa.islam.165/"
@@ -184,19 +94,109 @@
     "batch": 2022,
     "position": "Technical head member",
     "email": "sk2217@ece.jgec.ac.in",
-    "pic": "https://drive.google.com/open?id=12nJGF9AN9psMsXLxxbO4i166OnnGL-u3",
+    "pic": "https://drive.google.com/file/d/12nJGF9AN9psMsXLxxbO4i166OnnGL-u3/preview",
     "phone": "+916295454898",
     "linkedin": "https://www.linkedin.com/in/sauravlal2233",
     "facebook": "https://www.facebook.com/sauravkumar.lal.50"
+  },
+  {
+    "name": "Sailesh Sah",
+    "batch": 2021,
+    "position": "Secretary",
+    "email": "sah.sailesh18@gmail.com",
+    "pic": "https://drive.google.com/file/d/1_ykop_L3torqpWsv7idaguLfSF_W_sbx/preview",
+    "phone": "08918259031",
+    "linkedin": "https://www.linkedin.com/in/saileshsah859",
+    "facebook": ""
+  },
+  {
+    "name": "Diptangshu Chattopadhyay",
+    "batch": 2021,
+    "position": "Communication Head",
+    "email": "dc2123@ece.jgec.ac.in",
+    "pic": "https://drive.google.com/file/d/1Jj21OFWPEirqddsGpSlw3BDffJOdlGfu/preview",
+    "phone": "",
+    "linkedin": "https://www.linkedin.com/in/diptangshu-chattopadhyay-648473163",
+    "facebook": ""
+  },
+  {
+    "name": "Nabarjun Saha",
+    "batch": 2021,
+    "position": "Stock Head",
+    "email": "nabarjunsaha98@gmail.com",
+    "pic": "https://drive.google.com/file/d/17JuhPzfP9KTrAqk-MxK4FehGqRw4bWwG/preview",
+    "phone": 8777098242,
+    "linkedin": "linkedin.com/in/nabarjun",
+    "facebook": "https://m.facebook.com/nabarjun.saha"
+  },
+  {
+    "name": "Subham Shaw",
+    "batch": 2021,
+    "position": "Stock Holder",
+    "email": "subhamshaw39@gmail.com",
+    "pic": "https://drive.google.com/file/d/1VGdMhlDry6iyFoeF9FRwvj3QXNPRblu6/preview",
+    "phone": "",
+    "linkedin": "https://www.linkedin.com/in/subham-shaw-202161170",
+    "facebook": ""
   },
   {
     "name": "Sudipto Ghosh",
     "batch": 2021,
     "position": "Web Team Head",
     "email": "sudiptoghosh1129@gmail.com",
-    "pic": "https://drive.google.com/open?id=1Uvu8U1Qsrq1LT2OvLNLzivHdaeR8kaM5",
+    "pic": "https://drive.google.com/file/d/1Uvu8U1Qsrq1LT2OvLNLzivHdaeR8kaM5/preview",
     "phone": "",
     "linkedin": "https://www.linkedin.com/in/sudiptoghosh11/",
+    "facebook": ""
+  },
+  {
+    "name": "Atul Kumar",
+    "batch": 2020,
+    "position": "Secretary",
+    "email": "atul070kumar@gmail.com",
+    "pic": "https://drive.google.com/file/d/15928XpQzC0yHtGGcTq2b8d4m86jtYV7O/preview",
+    "phone": 7908153700,
+    "linkedin": "https://www.linkedin.com/in/atul-k-262405a6",
+    "facebook": "https://m.facebook.com/atu070kumar"
+  },
+  {
+    "name": "SUBHADEEP DATTA",
+    "batch": 2018,
+    "position": "Secretary",
+    "email": "sahebdatta1996@gmail.com",
+    "pic": "https://drive.google.com/file/d/1n828ybwTAFc0-exc6D3ZzmNCG9OhqhUV/preview",
+    "phone": "09474034723",
+    "linkedin": "https://www.linkedin.com/in/dattasubhadeep",
+    "facebook": ""
+  },
+  {
+    "name": "Aroondhuti Paul",
+    "batch": 2017,
+    "position": "Secretary",
+    "email": "aroondhutipaul@gmail.com",
+    "pic": "https://drive.google.com/file/d/1ekquFCv0VBf3WH6GBYFC_EMdzECDBzRP/preview",
+    "phone": 9126147393,
+    "linkedin": "https://www.linkedin.com/in/aroondhutipaul",
+    "facebook": "https://www.facebook.com/aroondhuti.paul"
+  },
+  {
+    "name": "Sayan Dey",
+    "batch": 2017,
+    "position": "Project Head",
+    "email": "dey.sayan22heaven@gmail.com",
+    "pic": "https://drive.google.com/file/d/1m8i4PvbSFrocahIZXZ20Vx0cdjFZZvr3/preview",
+    "phone": "",
+    "linkedin": "https://www.linkedin.com/in/sayan-dey-46aa5a128",
+    "facebook": ""
+  },
+  {
+    "name": "Anupam Sharma",
+    "batch": 2017,
+    "position": "Technical head",
+    "email": "sharmaanupam1095@gmail.com",
+    "pic": "https://drive.google.com/file/d/1ejQI0Y8SAC2rPzNt7SB577VHbMzK4LRe/preview",
+    "phone": 9051170355,
+    "linkedin": "https://www.linkedin.com/in/anupamsharma0110",
     "facebook": ""
   }
 ]

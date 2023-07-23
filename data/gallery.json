@@ -1,32 +1,32 @@
 [
   {
-    "src": "/assets/placeholders/bplan.jpg"
+    "src": "/assets/backgrounds/mic.jpg"
   },
   {
-    "src": "/assets/placeholders/tedx_ayan.jpg"
-  },
-
-  {
-    "src": "/assets/placeholders/sharktank.jpg"
-  },
-  {
-    "src": "/assets/placeholders/bplan.jpg"
-  },
-  {
-    "src": "/assets/placeholders/tedx_ayan.jpg"
+    "src": "/assets/backgrounds/nasa_earth.jpg"
   },
 
   {
-    "src": "/assets/placeholders/sharktank.jpg"
+    "src": "/assets/backgrounds/corporate.jpg"
   },
   {
-    "src": "/assets/placeholders/bplan.jpg"
+    "src": "/assets/backgrounds/mic.jpg"
   },
   {
-    "src": "/assets/placeholders/tedx_ayan.jpg"
+    "src": "/assets/backgrounds/nasa_earth.jpg"
   },
 
   {
-    "src": "/assets/placeholders/sharktank.jpg"
+    "src": "/assets/backgrounds/corporate.jpg"
+  },
+  {
+    "src": "/assets/backgrounds/mic.jpg"
+  },
+  {
+    "src": "/assets/backgrounds/nasa_earth.jpg"
+  },
+
+  {
+    "src": "/assets/backgrounds/corporate.jpg"
   }
 ]

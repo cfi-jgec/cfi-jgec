@@ -82,7 +82,7 @@ export default function Events() {
       </Typography>
       <Box
         sx={{
-          backgroundImage: `url("/assets/backgrounds/stacked-steps-haikei.svg")`,
+          backgroundImage: `url("/assets/backgrounds/corporate.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
