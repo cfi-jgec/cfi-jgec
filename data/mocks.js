@@ -1,0 +1,1 @@
+export const bannerUrl = "https://picsum.photos/1200/300";

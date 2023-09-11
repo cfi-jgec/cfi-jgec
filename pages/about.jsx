@@ -41,11 +41,12 @@ export default function About() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
+          maxWidth: '1152px',
+          margin: "0 auto",
           del: "2px 2px white",
-          width: "fit-content",
+          width: "100%",
           color: colors.white,
           borderRadius: "10px",
-          padding: "0 5%",
           ":first-letter": {
             color: colors.success,
             fontSize: { xs: "40px", md: "4vw", fontWeight: "bold" },
@@ -53,7 +54,7 @@ export default function About() {
           "&::after": {
             content: '""',
             display: "block",
-            width: "50%",
+            width: "20%", 
             marginTop: -1,
             marginBottom: 4,
             borderTop: `5px solid ${colors.success}`,
@@ -65,127 +66,137 @@ export default function About() {
       </Typography>
       <Box
         sx={{
-          width: "100%",
-          minHeight: "80vh",
-          // backgroundColor: "#fdfdfd",
+          minHeight: "100svh",
+          width: "100vw",
           backgroundImage: `url(/assets/backgrounds/corporate.jpg)`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
-          justifyContent: "center",
-          alignItems: "center",
-          display: "flex",
-          flexDirection: "column",
         }}
       >
-        <Layout>
-          <Row>
-            <GlassCard>
-              <Typography variant="h4" component={"h4"}>
-                Our Mission
-              </Typography>
-              <Typography variant="body1" component={"p"}>
-                Our mission is to create a transformative learning experience
-                for students, bridging the gap between theory and practice. By
-                providing a dynamic platform for innovation and problem-solving,
-                we empower students to apply their academic knowledge to
-                real-world scenarios, making a positive impact on society.
-                Nurturing their visionary projects from conception to reality,
-                we offer comprehensive support, including mentoring, team
-                formation, funding, and publicity.
-              </Typography>
-            </GlassCard>
-            <GlassCard>
-              <Typography variant="h4" component={"h4"}>
-                Our Vision
-              </Typography>
+        <Box
+          sx={{
+            maxWidth: "1440px",
+            margin: "0 auto",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Layout>
+            <Row>
+              <GlassCard>
+                <Typography variant="h4" component={"h4"}>
+                  Our Mission
+                </Typography>
+                <Typography variant="body1" component={"p"}>
+                  Our mission is to create a transformative learning experience
+                  for students, bridging the gap between theory and practice. By
+                  providing a dynamic platform for innovation and
+                  problem-solving, we empower students to apply their academic
+                  knowledge to real-world scenarios, making a positive impact on
+                  society. Nurturing their visionary projects from conception to
+                  reality, we offer comprehensive support, including mentoring,
+                  team formation, funding, and publicity.
+                </Typography>
+              </GlassCard>
+              <GlassCard>
+                <Typography variant="h4" component={"h4"}>
+                  Our Vision
+                </Typography>
 
-              <Typography variant="body1" component={"p"}>
-                We aim to cultivate a community of critical thinkers who are
-                equipped with the skills and confidence to tackle real-world
-                challenges. We believe that the ability to think critically is
-                essential for success in today&apos;s fast-paced world. As a
-                community of driven individuals united by creativity and a
-                passion for making a difference, we cultivate critical thinking
-                skills and confidence, preparing our students to succeed in a
-                fast-paced world and become responsible and impactful leaders of
-                the future.
-              </Typography>
-            </GlassCard>
-          </Row>
-          <Row>
-            <GlassRowCard>
-              <Typography gutterBottom variant="h4" component={"h4"}>
-                Objectives
-              </Typography>
-              {objectives.map((objective, index) => {
-                return (
-                  <StepCard key={index}>
-                    <AdjustRounded
-                      fontSize="large"
-                      sx={{
-                        position: "relative",
-                        top: "25%",
-                        backgroundColor: colors.success,
-                        borderRadius: "50%",
-                        left: "-20px",
-                      }}
-                    />
-                    <Typography
-                      variant="h6"
-                      component={"h6"}
-                      color={colors.white}
-                      //style first letter
-                      sx={{
-                        ":first-letter": {
-                          color: colors.success,
-                        },
-                      }}
-                    >
-                      {objective}
-                    </Typography>
-                  </StepCard>
-                );
-              })}
-            </GlassRowCard>
-          </Row>
-          <Row>
-            <GlassRowCard>
-              <Typography gutterBottom variant="h4" component={"h4"}>
-                Initiatives
-              </Typography>
-              {initiatives.map((val, index) => {
-                return (
-                  <StepCard2 key={index}>
-                    <Typography
-                      variant="h6"
-                      align="right"
-                      component={"h6"}
-                      color={colors.success}
-                    >
-                      {val.title}
-                      <br />
-                      <Typography variant="body1" align="right" component={"p"}>
-                        {val.desc}
+                <Typography variant="body1" component={"p"}>
+                  We aim to cultivate a community of critical thinkers who are
+                  equipped with the skills and confidence to tackle real-world
+                  challenges. We believe that the ability to think critically is
+                  essential for success in today&apos;s fast-paced world. As a
+                  community of driven individuals united by creativity and a
+                  passion for making a difference, we cultivate critical
+                  thinking skills and confidence, preparing our students to
+                  succeed in a fast-paced world and become responsible and
+                  impactful leaders of the future.
+                </Typography>
+              </GlassCard>
+            </Row>
+            <Row>
+              <GlassRowCard>
+                <Typography gutterBottom variant="h4" component={"h4"}>
+                  Objectives
+                </Typography>
+                {objectives.map((objective, index) => {
+                  return (
+                    <StepCard key={index}>
+                      <AdjustRounded
+                        fontSize="large"
+                        sx={{
+                          position: "relative",
+                          top: "25%",
+                          backgroundColor: colors.success,
+                          borderRadius: "50%",
+                          left: "-20px",
+                        }}
+                      />
+                      <Typography
+                        variant="h6"
+                        component={"h6"}
+                        color={colors.white}
+                        //style first letter
+                        sx={{
+                          ":first-letter": {
+                            color: colors.success,
+                          },
+                        }}
+                      >
+                        {objective}
                       </Typography>
-                    </Typography>
+                    </StepCard>
+                  );
+                })}
+              </GlassRowCard>
+            </Row>
+            <Row>
+              <GlassRowCard>
+                <Typography gutterBottom variant="h4" component={"h4"}>
+                  Initiatives
+                </Typography>
+                {initiatives.map((val, index) => {
+                  return (
+                    <StepCard2 key={index}>
+                      <Typography
+                        variant="h6"
+                        align="right"
+                        component={"h6"}
+                        color={colors.success}
+                      >
+                        {val.title}
+                        <br />
+                        <Typography
+                          variant="body1"
+                          align="right"
+                          component={"p"}
+                        >
+                          {val.desc}
+                        </Typography>
+                      </Typography>
 
-                    <CheckCircle
-                      fontSize="large"
-                      sx={{
-                        position: "relative",
-                        top: "25%",
-                        backgroundColor: colors.success,
-                        borderRadius: "50%",
-                        right: "-20px",
-                      }}
-                    />
-                  </StepCard2>
-                );
-              })}
-            </GlassRowCard>
-          </Row>
-        </Layout>
+                      <CheckCircle
+                        fontSize="large"
+                        sx={{
+                          position: "relative",
+                          top: "25%",
+                          backgroundColor: colors.success,
+                          borderRadius: "50%",
+                          right: "-20px",
+                        }}
+                      />
+                    </StepCard2>
+                  );
+                })}
+              </GlassRowCard>
+            </Row>
+          </Layout>
+        </Box>
       </Box>
     </Box>
   );

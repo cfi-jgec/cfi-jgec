@@ -59,21 +59,23 @@ export default function Events() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
-          width: "fit-content",
+          maxWidth: '1152px',
+          margin: "0 auto",
+          del: "2px 2px white",
+          width: "100%",
           color: colors.white,
           borderRadius: "10px",
-          padding: "0 5%",
           ":first-letter": {
-            color: colors.warning,
+            color: colors.success,
             fontSize: { xs: "40px", md: "4vw", fontWeight: "bold" },
           },
           "&::after": {
             content: '""',
             display: "block",
-            width: "50%",
+            width: "20%", 
             marginTop: -1,
             marginBottom: 4,
-            borderTop: `5px solid ${colors.warning}`,
+            borderTop: `5px solid ${colors.success}`,
           },
         }}
         className="animate__animated animate__fadeInLeft"
@@ -91,12 +93,17 @@ export default function Events() {
         <Layout>
           <Box
             sx={{
-              minWidth: "100vw",
-              justifyContent: "center",
-              alignItems: "center",
+              maxWidth: "1202px",
+              width: "100vw",
+              margin: "0 auto",
+              minHeight: "100svh",
+              justifyContent: "flex-start",
+              gap: "20px",
+              alignItems: "flex-start",
               display: "flex",
               flexDirection: { xs: "column-reverse", lg: "row" },
-              p: { xs: 2, md: 5 },
+              // p: { xs: 2, md: 5 },
+              paddingTop: "50px",
             }}
           >
             <Box

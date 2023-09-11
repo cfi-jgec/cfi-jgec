@@ -1,0 +1,42 @@
+[
+  {
+    "title": "OWASP Cybersecurity Cell",
+    "src": "/assets/clubs/cybersec.jpg",
+    "link": ""
+  },
+  {
+    "title": "Coder's Club JGEC",
+    "src": "/assets/clubs/dnc.png",
+    "link": ""
+  },
+  {
+    "title": "Entrepreneurship Development Cell",
+    "src": "/assets/clubs/edc.png",
+    "link": ""
+  },
+  {
+    "title": "Google DSC JGEC",
+    "src": "/assets/clubs/gdsc.jpg",
+    "link": ""
+  },
+  {
+    "title": "IEEE Student Branch JGEC",
+    "src": "/assets/clubs/IEEE.png",
+    "link": ""
+  },
+  {
+    "title": "Jyoti - Night School",
+    "src": "/assets/clubs/jyoti.jpg",
+    "link": ""
+  },
+  {
+    "title": "Space & Aeronautics Activity Center",
+    "src": "/assets/clubs/saac_light.png",
+    "link": ""
+  },
+  {
+    "title": "Renseigner - The Quiz Club",
+    "src": "/assets/clubs/quiz.png",
+    "link": ""
+  }
+]

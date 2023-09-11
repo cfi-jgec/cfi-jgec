@@ -1,0 +1,266 @@
+[
+  {
+    "eventHeroName": "ICIC",
+    "eventFullName": "Intra College Innovation Challenge",
+    "eventDescription": "Intra College Innovation Challenge is a platform for students to showcase their innovative ideas and get a chance to work on them with the help of mentors and resources provided by the college.",
+    "eventHeaderImage": "",
+    "eventTags": [],
+    "eventRepeat": "Annual",
+    "eventGallery": [],
+    "sessions": [
+      {
+        "year": "2023",
+        "champs": [
+          {
+            "positionId": 1,
+            "position": "Champions",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [
+              "John Doe",
+              "Jane Doe",
+              "Abraham Lincoln",
+              "George Washington"
+            ],
+            "teamImage": "",
+            "projectImage": ""
+          },
+          {
+            "positionId": 2,
+            "position": "Runners Up",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "teamImage": "",
+            "projectImage": ""
+          },
+          {
+            "positionId": 3,
+            "position": "2nd Runners Up",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "teamImage": "",
+            "projectImage": ""
+          }
+        ],
+        "participants": [
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "eventHeroName": "ICIC",
+    "eventFullName": "Intra College Innovation Challenge",
+    "eventDescription": "Intra College Innovation Challenge is a platform for students to showcase their innovative ideas and get a chance to work on them with the help of mentors and resources provided by the college.",
+    "eventHeaderImage": "",
+    "eventTags": [],
+    "eventRepeat": "Annual",
+    "eventGallery": [],
+    "sessions": [
+      {
+        "year": "2023",
+        "champs": [
+          {
+            "positionId": 1,
+            "position": "Champions",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [
+              "John Doe",
+              "Jane Doe",
+              "Abraham Lincoln",
+              "George Washington"
+            ],
+            "teamImage": "",
+            "projectImage": ""
+          },
+          {
+            "positionId": 2,
+            "position": "Runners Up",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "teamImage": "",
+            "projectImage": ""
+          },
+          {
+            "positionId": 3,
+            "position": "2nd Runners Up",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "teamImage": "",
+            "projectImage": ""
+          }
+        ],
+        "participants": [
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "eventHeroName": "ICIC",
+    "eventFullName": "Intra College Innovation Challenge",
+    "eventDescription": "Intra College Innovation Challenge is a platform for students to showcase their innovative ideas and get a chance to work on them with the help of mentors and resources provided by the college.",
+    "eventHeaderImage": "",
+    "eventTags": [],
+    "eventRepeat": "Annual",
+    "eventGallery": [],
+    "sessions": [
+      {
+        "year": "2023",
+        "champs": [
+          {
+            "positionId": 1,
+            "position": "Champions",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [
+              "John Doe",
+              "Jane Doe",
+              "Abraham Lincoln",
+              "George Washington"
+            ],
+            "teamImage": "",
+            "projectImage": ""
+          },
+          {
+            "positionId": 2,
+            "position": "Runners Up",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "teamImage": "",
+            "projectImage": ""
+          },
+          {
+            "positionId": 3,
+            "position": "2nd Runners Up",
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "teamImage": "",
+            "projectImage": ""
+          }
+        ],
+        "participants": [
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          },
+          {
+            "teamName": "Sempfer Phi",
+            "projectName": "Gas Chamber",
+            "projectDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "teamMembers": [],
+            "projectImage": ""
+          }
+        ]
+      }
+    ]
+  }
+]

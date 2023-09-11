@@ -25,8 +25,8 @@ const ParticleImg = (props) => {
     <ParticleImage
       src={props.src}
       scale={0.75}
-      entropy={20}
-      maxParticles={4000}
+      entropy={60}
+      maxParticles={7000}
       mouseMoveForce={motionForce}
       // touchMoveForce={motionForce}
       particleOptions={particleOptions}

@@ -16,11 +16,12 @@ export default function Alumni() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
+          maxWidth: '1152px',
+          margin: "0 auto",
           del: "2px 2px white",
-          width: "fit-content",
+          width: "100%",
           color: colors.white,
           borderRadius: "10px",
-          padding: "0 5%",
           ":first-letter": {
             color: colors.danger,
             fontSize: { xs: "40px", md: "4vw", fontWeight: "bold" },
@@ -28,7 +29,7 @@ export default function Alumni() {
           "&::after": {
             content: '""',
             display: "block",
-            width: "50%",
+            width: "20%", 
             marginTop: -1,
             marginBottom: 4,
             borderTop: `5px solid ${colors.danger}`,
@@ -51,10 +52,13 @@ export default function Alumni() {
         <Layout>
           <Box
             sx={{
-              justifyContent: "center",
+              justifyContent: "space-evenly",
               alignItems: "center",
               display: "flex",
               flexWrap: "wrap",
+              maxWidth: "1152px",
+              width: "100vw",
+              margin: "0 auto",
             }}
           >
             {data.map((val, index) => {

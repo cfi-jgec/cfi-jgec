@@ -17,22 +17,23 @@ export default function Team() {
         sx={{
           fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
           fontWeight: "bold",
+          maxWidth: '1152px',
+          margin: "0 auto",
           del: "2px 2px white",
-          width: "fit-content",
+          width: "100%",
           color: colors.white,
           borderRadius: "10px",
-          padding: "0 5%",
           ":first-letter": {
-            color: colors.warning,
+            color: colors.success,
             fontSize: { xs: "40px", md: "4vw", fontWeight: "bold" },
           },
           "&::after": {
             content: '""',
             display: "block",
-            width: "50%",
+            width: "20%", 
             marginTop: -1,
             marginBottom: 4,
-            borderTop: `5px solid ${colors.warning}`,
+            borderTop: `5px solid ${colors.success}`,
           },
         }}
         className="animate__animated animate__fadeInLeft"
@@ -61,12 +62,12 @@ export default function Team() {
               justifyContent: "space-evenly",
               alignItems: "center",
               gap: "20px",
-              maxWidth: "1200px",
+              maxWidth: "1152px",
               margin: "auto",
             }}
           >
             {data.map((Elem, i) => {
-              console.log(Elem["val"]);
+              // console.log(Elem["val"]);
               return (
                 <>
                   {Elem["val"].map((val, index) => {

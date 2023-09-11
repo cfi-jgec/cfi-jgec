@@ -51,11 +51,11 @@ const pages = [
     link: "/events",
     icon: <Event />,
   },
-  {
-    name: "Gallery",
-    link: "/gallery",
-    icon: <Collections />,
-  },
+  // {
+  //   name: "Gallery",
+  //   link: "/gallery",
+  //   icon: <Collections />,
+  // },
   {
     name: "Team",
     link: "/team",
@@ -122,7 +122,12 @@ const Appbar = (props) => {
           sx={{ padding: "0px !important" }}
           className="animate__animated animate__fadeInDown"
         >
-          <Container maxWidth="xl">
+          <Container
+            sx={{
+              margin: "0 auto",
+              maxWidth: "1440px",
+            }}
+          >
             <Toolbar disableGutters>
               <IconButton sx={{ display: { xs: "none", md: "flex" } }}>
                 <Link href="/">

@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       <Box
         sx={{
           mt: { xs: "86px", md: "76px" },
-          backgroundImage: `url(/assets/backgrounds/corporate.jpg)`,
+          // backgroundImage: `url(/assets/backgrounds/corporate.jpg)`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
