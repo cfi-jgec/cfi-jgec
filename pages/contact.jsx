@@ -49,7 +49,7 @@ const StyledTextField = styled(TextField)({
 });
 
 export default function Events() {
-  const [state, handleSubmit] = useForm("xzbwdzwy");
+  const [state, handleSubmit] = useForm("mgejygra");
   useEffect(() => {
     document.title = "CONTACT | CFI";
   }, []);
@@ -173,7 +173,7 @@ export default function Events() {
             >
               {state.succeeded ? (
                 <>
-                  <Typography variant="body1">
+                  <Typography variant="body1" color="white">
                     Thanks for reaching out! Someone will soon get back to you!
                   </Typography>
                 </>

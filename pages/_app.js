@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
     //   offset: 50,
     // });
 
-    setTimeout(() => setLoading(false), 2000);
+    setTimeout(() => setLoading(false), 200);
   }, []);
   return loading ? (
     <Loader />

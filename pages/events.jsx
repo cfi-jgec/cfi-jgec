@@ -140,7 +140,12 @@ export default function Events() {
               <ModalHeroSection>
                 {view.session.champs.map((champ, index) => (
                   <RankCardContainer key={index}>
-                    <Hidden className="Hidden">
+                    <Hidden
+                      className="Hidden"
+                      style={{
+                        background: {},
+                      }}
+                    >
                       <h3>{champ.teamName}</h3>
                       <div>
                         {champ.teamMembers.map((member, index) => (
@@ -362,6 +367,7 @@ const RankCard = styled.div`
   width: 100%;
   margin: auto;
   display: flex;
+  height: 300px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;

@@ -14,7 +14,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {
   ArrowBackIosNew,
   ArrowForwardIos,
-  FormatQuote,
   KeyboardArrowLeft,
   KeyboardArrowRight,
 } from "@mui/icons-material";
@@ -28,19 +27,25 @@ import {
 } from "react-stacked-center-carousel";
 import { useRef } from "react";
 const sources = [
-  "https://picsum.photos/500/1000",
-  "https://picsum.photos/1000/1000",
-  "https://picsum.photos/400/1000",
-  "https://picsum.photos/600/1000",
+  "https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-xEx79sgVFMRD_gCD0sU8Ab-_BNt_mE3OkY1zAhM0aTEvw9nqcxssW9Ebsx2uDndgNJHJEOV_lpbeFSjgjUCLatKTNdow=w1920-h883",
+  "https://images.yourstory.com/cs/2/96eabe90392211eb93f18319e8c07a74/finale-1687365194651.png?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces",
+  "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+  "https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-w9TtPy_05n4miOztfovo3Ydz-wr7KRBQmnFGvjBuzSGerZjCd5QOcLqMDZzmuK97LWRWCKEwVHNk5VNAKn2cT8jtQ8=w1920-h883",
 ];
 function Testimonial({ data, dataIndex }) {
   let { content, author, designation } = data[dataIndex];
   return (
     <CardBody>
-      <FormatQuote sx={{ fontSize: "2rem" }} />
+      <Image src="/assets/openquote.svg" width={50} height={50} alt="Quote" />
       <Typography
         sx={{
-          fontSize: "0.9rem",
+          fontSize: "0.85rem",
+          padding: "0 4px",
+          maxHeight: "80%",
+          overflow: "hidden",
+          "&:hover": {
+            overflow: "auto",
+          },
         }}
       >
         {content}
@@ -48,15 +53,11 @@ function Testimonial({ data, dataIndex }) {
       <hr />
       <div
         style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-start",
-          alignItems: "center",
           fontSize: "0.7rem",
         }}
       >
-        {author}
-        {designation}
+        <div>{author}</div>
+        <div>{designation}</div>
       </div>
     </CardBody>
   );
@@ -167,7 +168,7 @@ export default function Home() {
           <Carousel
             autoPlay
             infiniteLoop
-            interval={1500}
+            interval={2500}
             showThumbs={false}
             showStatus={false}
             swipeable={true}
@@ -187,10 +188,6 @@ export default function Home() {
                   alt="@CFI"
                   title={`Gallery Image ${index + 1}`}
                   loading="eager"
-                  quality={50}
-                  height={1000}
-                  width={1000}
-                  priority={true}
                 />
               </CarouselSlide>
             ))}
@@ -216,17 +213,25 @@ export default function Home() {
           </AltScr>
         </Screen>
         <Screen className="section">
-          <div style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-          }}>
-            <Head>Testimonials</Head>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+              color: "white",
+            }}
+          >
+            <Head
+              style={{
+                fontSize: "3rem",
+              }}
+            >
+              Testimonials
+            </Head>
             <p
               style={{
-                color: "white !important",
                 fontSize: "1rem",
               }}
             >
@@ -495,12 +500,10 @@ const CarouselSlide = styled.div`
     height: 75vw;
   }
 `;
-const StyledImage = styled(Image)`
+const StyledImage = styled.img`
   object-fit: cover;
   object-position: center;
-  position: relative;
   width: 100%;
-  margin: 0 auto;
 `;
 const HeroText = styled.h1`
   font-size: 4rem;
