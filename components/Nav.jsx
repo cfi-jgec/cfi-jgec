@@ -33,7 +33,11 @@ import {
   Event,
   Home,
   Info,
+ 
+  
 } from "@mui/icons-material";
+import WorkspacePremiumRoundedIcon from "@mui/icons-material/WorkspacePremiumRounded";
+import PrecisionManufacturingRoundedIcon from "@mui/icons-material/PrecisionManufacturingRounded";
 import { colors } from "../styles/colors";
 const pages = [
   {
@@ -65,6 +69,16 @@ const pages = [
     name: "Our Alumni",
     link: "/alumni",
     icon: <Diversity2 />,
+  },
+  {
+    name: "Certificate",
+    link: "/certificate",
+    icon: <WorkspacePremiumRoundedIcon />,
+  },
+  {
+    name: "Projects",
+    link: "/projects",
+    icon: <PrecisionManufacturingRoundedIcon />,
   },
   {
     name: "Contact Us",
