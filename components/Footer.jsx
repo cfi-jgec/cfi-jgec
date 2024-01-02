@@ -1,78 +1,285 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, List, ListItem, Typography } from "@mui/material";
 import { colors } from "../styles/colors";
 import styled from "styled-components";
+import { Facebook, LinkedIn, Instagram, Twitter } from "@mui/icons-material";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+
+const footerTopItem = [
+  {
+    title: "students",
+    link: "/students",
+  },
+  {
+    title: "alumni",
+    link: "/alumni",
+  },
+  {
+    title: "projects",
+    link: "/projects",
+  },
+  {
+    title: "certificates",
+    link: "/certificates",
+  },
+  {
+    title: "events",
+    link: "/events",
+  },
+];
+
+const departments = [
+  {
+    title: "arduino",
+    link: "/arduino",
+  },
+  {
+    title: "IOT",
+    link: "/iot",
+  },
+  {
+    title: "3d printing",
+    link: "/3dPrinting",
+  },
+  {
+    title: "arduino",
+    link: "/arduino",
+  },
+  {
+    title: "IOT",
+    link: "/iot",
+  },
+  {
+    title: "3d printing",
+    link: "/3dPrinting",
+  },
+];
+
+const midFooterItems = [
+  {
+    title: "annual reports",
+    link: "/annualReports",
+  },
+  {
+    title: "annual reports",
+    link: "/annualReports",
+  },
+  {
+    title: "annual reports",
+    link: "/annualReports",
+  },
+  {
+    title: "annual reports",
+    link: "/annualReports",
+  },
+  {
+    title: "annual reports",
+    link: "/annualReports",
+  },
+  {
+    title: "annual reports",
+    link: "/annualReports",
+  },
+];
+
+const socialIcons = [
+  {
+    Icon: <Facebook />,
+    color: "blue",
+    link: "https://facebook.com",
+  },
+  {
+    Icon: <Instagram />,
+    color: "pink",
+    link: "https://facebook.com",
+  },
+  {
+    Icon: <LinkedIn />,
+    color: "blue",
+    link: "https://facebook.com",
+  },
+  {
+    Icon: <Twitter />,
+    color: "blue",
+    link: "https://facebook.com",
+  },
+];
+
+const lastFooterItems = [
+  {
+    title: "Accessibility",
+    link: "/accessibility",
+  },
+  {
+    title: "Privacy Policy",
+    link: "/privacyPolicy",
+  },
+  {
+    title: "Term of Use",
+    link: "/termOfUse",
+  },
+  {
+    title: "Sitemap",
+    link: "/sitemap",
+  },
+];
 export default function Footer() {
   return (
     <Box
       sx={{
-        minHeight: "30px",
-        backgroundColor: colors.primary,
-        display: "flex",
-        flexDirection: "column",
         width: "100%",
-        gap: "10px",
-        justifyContent: "space-evenly",
-        alignItems: "center",
-        padding: "10px",
+        minHeight: "20rem",
+        backgroundColor: colors.primary,
       }}
     >
-      <Typography sx={{ color: "#fff" }}>
-        Centre for Innovation &nbsp;&#169;&nbsp;2023
-      </Typography>
-      <Div>
-        <Anchor target="__blank" rel="noreferrer" href="https://linktr.ee/cfi_jgec">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-globe-central-south-asia"
-            viewBox="0 0 16 16"
-          >
-            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM4.882 1.731a.482.482 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.721.721 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a.996.996 0 0 0-.462-.04 7.03 7.03 0 0 1 2.45-2.027Zm-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.78.78 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.454.454 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282a.61.61 0 0 0 .04-.001 7.003 7.003 0 0 1-12.658.905Z" />
-          </svg>
-        </Anchor>
-        <Anchor target="__blank" rel="noreferrer" href="https://www.linkedin.com/company/71340644/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-linkedin"
-            viewBox="0 0 16 16"
-          >
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-          </svg>
-        </Anchor>
-        <Anchor target="__blank" rel="noreferrer" href="https://www.facebook.com/CFI.JGEC/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-meta"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"
-            />
-          </svg>
-        </Anchor>
-        <Anchor target="__blank" rel="noreferrer" href="https://www.instagram.com/cfi_jgec/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-instagram"
-            viewBox="0 0 16 16"
-          >
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-          </svg>
-        </Anchor>
-      </Div>
+      <FooterContainer>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "flex-start",
+          }}
+        >
+          {footerTopItem.map((item, index) => {
+            return (
+              <ListItem
+                sx={{
+                  width: "auto",
+                  cursor: "pointer",
+                  paddingLeft: 0,
+                  paddingBottom: 0,
+                }}
+                key={index}
+              >
+                {item.title}
+              </ListItem>
+            );
+          })}
+        </Box>
+        <hr style={{ color: "#d4d4d4", height: "1px", opacity: 0.4 }} />
+        <h3 style={{ fontWeight: "500", marginBottom: "0" }}>departments</h3>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "flex-start",
+          }}
+        >
+          {departments.map((department, index) => {
+            return (
+              <ListItem
+                sx={{
+                  width: "auto",
+                  cursor: "pointer",
+                  opacity: 0.8,
+                  paddingLeft: 0,
+                  paddingBottom: 0,
+                }}
+                key={index}
+              >
+                {department.title}
+              </ListItem>
+            );
+          })}
+        </Box>
+        <hr style={{ color: "#d4d4d4", height: "1px", opacity: 0.4 }} />
+        <LogoContainer>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <img src="logo_light.png" alt="logo" height={80} width={80} />
+            <Box
+              sx={{
+                margin: "0 1rem",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: "2.5rem",
+                  fontWeight: "500",
+                  color: "white",
+                  marginBottom: 0,
+                }}
+              >
+                CFI JGEC
+              </Typography>{" "}
+              <Typography> Centre for Innovation</Typography>
+            </Box>
+          </Box>
+          <FollowContainer>
+            <Typography sx={{ textAlign: "center", fontSize: "18px" }}>
+              Follow us on
+            </Typography>
+            <List sx={{ display: "flex" }}>
+              {socialIcons.map((icon, index) => {
+                return (
+                  <ListItem
+                    sx={{
+                      cursor: "pointer",
+                      opacity: 0.8,
+                      color: "white",
+                      fontSize: "2rem",
+                      padding: "6px .5rem",
+                    }}
+                    key={index}
+                  >
+                    {icon.Icon}
+                  </ListItem>
+                );
+              })}
+            </List>
+          </FollowContainer>
+        </LogoContainer>
+        <hr style={{ color: "#d4d4d4", height: "1px", opacity: 0.4 }} />
+        <LogoContainer>
+          <Box>
+            <List
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "flex-start",
+                fontSize: "14px",
+                padding: 0,
+              }}
+            >
+              {lastFooterItems.map((department, index) => {
+                return (
+                  <ListItem
+                    sx={{
+                      width: "auto",
+                      opacity: 0.8,
+                      padding: 0,
+                    }}
+                    key={index}
+                  >
+                    <Typography sx={{ cursor: "pointer" }}>
+                      {department.title}
+                    </Typography>
+                    {index < lastFooterItems.length - 1 ? (
+                      <span style={{ padding: "0 10px" }}>|</span>
+                    ) : (
+                      <></>
+                    )}
+                  </ListItem>
+                );
+              })}
+            </List>
+            <Typography sx={{ fontSize: "16px", opacity: 0.7 }}>
+              © 2023 CFI JGEC - All rights reserved
+            </Typography>
+          </Box>
+          <FooterLastContainer>
+            <h5>Powered by</h5>
+            <h5>CFI web team</h5>
+            <h6>
+              website last updated on:{" "}
+              <span>{new Date().toLocaleString()}</span>
+            </h6>
+          </FooterLastContainer>
+        </LogoContainer>
+      </FooterContainer>
     </Box>
   );
 }
@@ -85,5 +292,61 @@ const Anchor = styled.a`
     height: 30px;
   }
 `;
-const Div = styled.div`
+const FooterContainer = styled.div`
+  width: 80%;
+  min-height: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  color: #d4d4d4;
+  text-transform: capitalize;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+`;
+const FollowContainer = styled.div`
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    margin-right: 0;
+    margin: "0 auto";
+  }
+`;
+const FooterLastContainer = styled.div`
+  h5 {
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.7;
+    text-align: end;
+    margin: 0;
+  }
+  h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.7;
+  }
+  @media (max-width: 768px) {
+    margin: .5rem 0;
+    width: 100%;
+    h5 {
+      text-align: start;
+    }
+    span{
+      display: block;
+    }
+  }
 `;

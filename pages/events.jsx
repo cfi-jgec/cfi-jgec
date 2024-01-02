@@ -1,5 +1,4 @@
-import { Typography, Box, Modal } from "@mui/material";
-import { colors } from "../styles/colors";
+import {  Box, Modal } from "@mui/material";
 import styled from "styled-components";
 import "animate.css";
 import Layout from "../components/Layout";
@@ -12,6 +11,8 @@ import {
 } from "@mui/icons-material";
 import { bannerUrl } from "../data/mocks";
 import Image from "next/image";
+import Header from "../components/Header";
+import CommonBodyLayout from "../components/CommonBodyLayout";
 const style = {
   position: "absolute",
   top: "50%",
@@ -34,97 +35,50 @@ export default function Events() {
   const [view, setView] = useState({});
   useEffect(() => {
     document.title = "EVENTS | CFI";
-    console.log(data);
   }, []);
   return (
     <Box>
-      <Typography
-        sx={{
-          fontSize: { xs: "30px", md: "3vw", fontWeight: "bold" },
-          fontWeight: "bold",
-          maxWidth: "1152px",
-          margin: "0 auto",
-          del: "2px 2px white",
-          width: "100%",
-          color: colors.white,
-          borderRadius: "10px",
-          ":first-letter": {
-            color: colors.warning,
-            fontSize: { xs: "40px", md: "4vw", fontWeight: "bold" },
-          },
-          "&::after": {
-            content: '""',
-            display: "block",
-            width: "20%",
-            marginTop: -1,
-            marginBottom: 4,
-            borderTop: `5px solid ${colors.warning}`,
-          },
-        }}
-        className="animate__animated animate__fadeInLeft"
-      >
-        Events
-      </Typography>
-      <Box
-        sx={{
-          minHeight: "100svh",
-          width: "100vw",
-          backgroundImage: `url(/assets/backgrounds/corporate.jpg)`,
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
-        }}
-      >
-        <Box
-          sx={{
-            maxWidth: "1440px",
-            margin: "0 auto",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Layout>
-            <Container>
-              {data.map((event, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <LightbulbCircleRounded />
-                  </CardHeader>
-                  <CardContent>
-                    <h3>{event.eventHeroName}</h3>
-                    <p>{event.eventDescription}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <Button>
-                      <LightMode />
-                    </Button>
-                    <FooterSessions>
-                      <h4>Sessions</h4>
-                      {event.sessions.map((session, index) => (
-                        <h5
-                          key={index}
-                          onClick={() => {
-                            setView({
-                              session,
-                              eventName: event.eventFullName,
-                              eventDesc: event.eventDescription,
-                            });
-                            handleOpen();
-                          }}
-                        >
-                          {session.year}
-                        </h5>
-                      ))}
-                    </FooterSessions>
-                  </CardFooter>
-                </Card>
-              ))}
-            </Container>
-          </Layout>
-        </Box>
-      </Box>
+      <Header header={"Event"} />
+      <CommonBodyLayout>
+        <Layout>
+          <Container>
+            {data?.map((event, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <LightbulbCircleRounded />
+                </CardHeader>
+                <CardContent>
+                  <h3>{event.eventHeroName}</h3>
+                  <p>{event.eventDescription}</p>
+                </CardContent>
+                <CardFooter>
+                  <Button>
+                    <LightMode />
+                  </Button>
+                  <FooterSessions>
+                    <h4>Sessions</h4>
+                    {event.sessions.map((session, index) => (
+                      <h5
+                        key={index}
+                        onClick={() => {
+                          setView({
+                            session,
+                            eventName: event.eventFullName,
+                            eventDesc: event.eventDescription,
+                          });
+                          handleOpen();
+                        }}
+                      >
+                        {session.year}
+                      </h5>
+                    ))}
+                  </FooterSessions>
+                </CardFooter>
+              </Card>
+            ))}
+          </Container>
+        </Layout>
+      </CommonBodyLayout>
       <StyledModal
         open={open}
         onClose={handleClose}
@@ -150,8 +104,8 @@ export default function Events() {
                       <div>
                         {champ.teamMembers.map((member, index) => (
                           <p key={index}>
+                            {index + 1}.{"  "}
                             {member}
-                            {index}
                           </p>
                         ))}
                       </div>
