@@ -31,7 +31,7 @@ import CommonBodyLayout from "../components/CommonBodyLayout";
 //   padding: "2rem",
 // };
 
-const projects = () => {
+const Projects = () => {
   const [view, setView] = useState(false);
   const handelOnOpen = () => {
     setView(!view);
@@ -124,7 +124,7 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
 
 const CardComponent = ({ handelOnOpen }) => {
   return (
